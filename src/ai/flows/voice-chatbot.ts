@@ -72,7 +72,7 @@ AyurBot Voice:`,
 const audioPrompt = ai.definePrompt({
   name: 'voiceChatbotAudioPrompt',
   model: 'googleai/gemini-2.5-flash-preview-tts',
-  input: z.object({ text: z.string() }),
+  input: { schema: z.object({ text: z.string() }) },
   prompt: `Read the following text aloud: {{{text}}}`,
   config: {
     responseModalities: ['AUDIO'],

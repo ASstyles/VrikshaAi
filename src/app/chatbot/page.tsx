@@ -66,12 +66,24 @@ export default function ChatbotPage() {
         };
 
         rec.onerror = (event: any) => {
-          console.error('Speech recognition error:', event.error);
           setIsListening(false);
+
+          if (event.error === 'no-speech' || event.error === 'aborted') {
+            console.warn(`Speech recognition stopped: ${event.error}`);
+            return;
+          }
+
+          console.error('Speech recognition error:', event.error);
+
+          let errorMessage = `Speech recognition failed: '${event.error}'`;
+          if (event.error === 'not-allowed') {
+            errorMessage = 'Microphone access blocked. Please check your browser permissions.';
+          }
+
           toast({
             variant: 'destructive',
             title: 'Voice Error',
-            description: `Speech recognition failed: '${event.error}'`,
+            description: errorMessage,
           });
         };
 
