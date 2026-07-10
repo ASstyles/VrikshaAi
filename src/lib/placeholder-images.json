@@ -1,0 +1,100 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Lush green leaves background",
+      "imageUrl": "https://images.unsplash.com/photo-1584204559709-ca7d413229eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JlZW4lMjBsZWF2ZXN8ZW58MHx8fHwxNzY5NTc3Mzg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green leaves"
+    },
+    {
+      "id": "ashwagandha",
+      "description": "Ashwagandha plant",
+      "imageUrl": "https://images.unsplash.com/photo-1536147210925-5cb7a7a4f9fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmVlbiUyMHBsYW50fGVufDB8fHx8MTc2OTU4NjEyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green plant"
+    },
+    {
+      "id": "tulsi",
+      "description": "Tulsi (Holy Basil) plant",
+      "imageUrl": "https://images.unsplash.com/photo-1646983205802-0adf649e4a5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXNpbCUyMHBsYW50fGVufDB8fHx8MTc2OTYzNTMwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "basil plant"
+    },
+    {
+      "id": "turmeric",
+      "description": "Turmeric root and powder",
+      "imageUrl": "https://images.unsplash.com/photo-1768729341217-0e11cb959252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0dXJtZXJpYyUyMHJvb3R8ZW58MHx8fHwxNzY5NjY3NTAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "turmeric root"
+    },
+    {
+      "id": "brahmi",
+      "description": "Brahmi plant with small leaves",
+      "imageUrl": "https://images.unsplash.com/photo-1601355242622-aa2718363a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbWFsbCUyMGxlYXZlc3xlbnwwfHx8fDE3Njk2NzAxODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "small leaves"
+    },
+    {
+      "id": "neem",
+      "description": "Neem tree leaves",
+      "imageUrl": "https://images.unsplash.com/photo-1706940989475-83e524d4d701?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxuZWVtJTIwbGVhdmVzfGVufDB8fHx8MTc2OTY2NzUwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "neem leaves"
+    },
+    {
+      "id": "amla",
+      "description": "Amla fruit on a tree",
+      "imageUrl": "https://images.unsplash.com/photo-1623861222155-55d2836269cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbWxhJTIwZnJ1aXR8ZW58MHx8fHwxNzE5MzEwMzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green fruit"
+    },
+    {
+      "id": "gotu-kola",
+      "description": "Gotu Kola leaves",
+      "imageUrl": "https://images.unsplash.com/photo-1629827318593-41484b3a9089?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb3R1JTIwa29sYXxlbnwwfHx8fDE3MTkzMTA0Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green leaves"
+    },
+    {
+      "id": "licorice",
+      "description": "Licorice root sticks",
+      "imageUrl": "https://images.unsplash.com/photo-1596707379769-3a3240a46d14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsaWNvcmljZSUyMHJvb3R8ZW58MHx8fHwxNzE5MzEwNDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "root sticks"
+    },
+    {
+      "id": "guggul",
+      "description": "Guggul resin",
+      "imageUrl": "https://images.unsplash.com/photo-1619639538356-f64e2fed51d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNpbnxlbnwwfHx8fDE3MTkzMTA1MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "resin stones"
+    },
+    {
+      "id": "cardamom",
+      "description": "Green cardamom pods",
+      "imageUrl": "https://images.unsplash.com/photo-1558985227-2b99525f0578?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXJkYW1vbSUyMHBvZHxlbnwwfHx8fDE3MTkzMTA1NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spice pods"
+    },
+    {
+      "id": "ginger",
+      "description": "Ginger root",
+      "imageUrl": "https://images.unsplash.com/photo-1629837229929-c81721503f16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHwnaW5nZXIlMjByb290fGVufDB8fHx8MTcyMDM1OTAwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ginger root"
+    },
+    {
+      "id": "moringa",
+      "description": "Moringa leaves",
+      "imageUrl": "https://images.unsplash.com/photo-1609881363574-e884b64b1d6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3JpbmdhJTIwbGVhdmVzfGVufDB8fHx8MTcyMDM1OTE0NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "moringa leaves"
+    },
+    {
+      "id": "shatavari",
+      "description": "Plant root",
+      "imageUrl": "https://images.unsplash.com/photo-1530089851258-c5799988c16d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwGxhbnQlMjByb290fGVufDB8fHx8MTcyMDM1OTM0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "plant root"
+    },
+    {
+      "id": "giloy",
+      "description": "Heart-shaped leaves",
+      "imageUrl": "https://images.unsplash.com/photo-1599146522325-a5d9333907c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoZWFydCUyMGxlYXZlc3xlbnwwfHx8fDE3MjAzNTk0MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "heart leaves"
+    },
+    {
+      "id": "fenugreek",
+      "description": "Fenugreek seeds",
+      "imageUrl": "https://images.unsplash.com/photo-1587477610636-1051283a0098?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZW51Z3JlZWslMjBzZWVkc3xlbnwwfHx8fDE3MjAzNTk0NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fenugreek seeds"
+    }
+  ]
+}

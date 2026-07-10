@@ -1,0 +1,150 @@
+{
+  "entities": {
+    "UserProfile": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "UserProfile",
+      "type": "object",
+      "description": "Represents a user's profile and prakriti analysis results.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the user profile, same as the Firebase Auth UID."
+        },
+        "vataScore": {
+          "type": "number",
+          "description": "User's Vata score from the Prakriti Analyzer."
+        },
+        "pittaScore": {
+          "type": "number",
+          "description": "User's Pitta score from the Prakriti Analyzer."
+        },
+        "kaphaScore": {
+          "type": "number",
+          "description": "User's Kapha score from the Prakriti Analyzer."
+        },
+        "dominantDosha": {
+          "type": "string",
+          "description": "The user's dosha constitution based on the Prakriti analysis (e.g., Vata, Pitta-Kapha)."
+        },
+        "favoritePlantIds": {
+          "type": "array",
+          "description": "An array of plant IDs that the user has favorited.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gardenPlantIds": {
+          "type": "array",
+          "description": "An array of plant IDs that the user has added to their garden plan.",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "vataScore",
+        "pittaScore",
+        "kaphaScore",
+        "dominantDosha"
+      ]
+    },
+    "Plant": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Plant",
+      "type": "object",
+      "description": "Represents a medicinal plant with its properties and uses.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the plant."
+        },
+        "name": {
+          "type": "string",
+          "description": "Common name of the plant."
+        },
+        "scientificName": {
+          "type": "string",
+          "description": "Scientific name of the plant."
+        },
+        "description": {
+          "type": "string",
+          "description": "A brief description of the plant."
+        },
+        "uses": {
+          "type": "string",
+          "description": "Traditional and medicinal uses of the plant."
+        },
+        "image": {
+          "type": "object",
+          "description": "Image information for the plant.",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL of the plant image."
+            },
+            "alt": {
+              "type": "string",
+              "description": "Alternative text for the image."
+            },
+            "hint": {
+              "type": "string",
+              "description": "Hint for AI image generation or search."
+            }
+          },
+          "required": ["url", "alt"]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "scientificName",
+        "description",
+        "uses",
+        "image"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/users/{userId}",
+        "definition": {
+          "entityName": "UserProfile",
+          "schema": {
+            "$ref": "#/backend/entities/UserProfile"
+          },
+          "description": "Stores user profile data, including Prakriti analysis results and favorite plants. Uses path-based ownership for straightforward security rules.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "The unique identifier of the user, matching their Firebase Auth UID."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/plants/{plantId}",
+        "definition": {
+          "entityName": "Plant",
+          "schema": {
+            "$ref": "#/backend/entities/Plant"
+          },
+          "description": "Stores plant data for the digital herbarium. This data is public and read-only for clients.",
+          "params": [
+            {
+              "name": "plantId",
+              "description": "The unique identifier of the plant."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
